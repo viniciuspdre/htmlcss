@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis&family=Raleway&family=Ubuntu:wght@400&display=swap');
+*{
+    font-family: 'Ubuntu', sans-serif;
+    color: antiquewhite;
+}
+
+body{
+    background-color: rgb(31, 29, 29);
+}
+
+h1 {
+    text-align: center;
+}
+
+a {
+    display: block;
+    margin-left: 43%;
+}
+
+iframe {
+    margin-left: 31%;
+}
+
+.cunhao {
+    margin-left: 48%;
+    margin-top: 15px;
+}
