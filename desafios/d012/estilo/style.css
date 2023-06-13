@@ -38,34 +38,33 @@ header p a {
     color: var(--cornormal);
 }
 
-main {
-    
-}
-
 main pre {
-    font: normal normal 3vw var(--fontepre);
-    margin: 80px 0 80px 20px;
+    font: normal normal 3.5vw var(--fontepre);
+    margin: 80px 0 80px 30px;
 }
 
 .fundo-imagem {
     background-color: burlywood;
     padding: 10px 0;
+    box-shadow: inset 6px 6px 13px 0 rgba(0, 0, 0, 0.455);
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 .fundo-imagem pre{
     background-color: #00000038;
     width: fit-content;
     color: var(--cornormal);
+    text-shadow: 1px 1px 0px black;
 }
 
 #image1 {
     background-image: url(../imagens/background001.jpg);
-    background-size: cover;
+   background-position: right center; 
 }
 
 #image2 {
     background-image: url(../imagens/background002.jpg);
-    background-size: cover;
 }
 
 footer {
