@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <script src="script.js"></script>
+    <style>
+        :root {
+            --corfundo: #090C08;
+            --corletra: #B9C6AE;
+        }
+        body {
+            background-color:  var(--corfundo);
+            font-family: Arial, Helvetica, sans-serif;
+            color: var(--corletra);
+        }
+
+        table {
+            margin: auto;
+            width: 70vw;
+            border-collapse: collapse;
+        }
+
+        th,td {
+            border: 1px solid var(--corletra);
+            padding: 10px;
+        }
+
+        th {
+            background-color: #474056;
+        }
+
+        td {
+            color: var(--corfundo);
+            background-color: #fff;
+        }
+
+        input {
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th scope="col" style="width: 22%;" rowspan="2">Área</th>
+                <th scope="col" style="width: 20%;" rowspan="2">Disciplinas</th>
+                <th colspan="2" scope="colgroup" style="width: auto;">Notas</th>
+                <th scope="col" style="width: 20%;" rowspan="2">Média</th>
+            </tr>
+            <tr>
+                <th>Nota 1</th>
+                <th>Nota 2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="rowgroup" rowspan="3">Exatas</th>
+                <td>Matemática</td>
+                <td><input type="number" name="mat1" id="mat1"></td>
+                <td><input type="number" name="mat2" id="mat2"></td>
+                <td><span id="medmat"></td>
+            </tr>
+            <tr>
+                <td>Física</td>
+                <td><input type="number" name="fis1" id="fis1"></td>
+                <td><input type="number" name="fis2" id="fis2"></td>
+                <td><span id="medfis"></td>
+            </tr>
+            <tr>
+                <td>Química</td>
+                <td><input type="number" name="qui1" id="qui1"></td>
+                <td><input type="number" name="qui2" id="qui2"></td>
+                <td><span id="medqui"></td>
+            </tr>
+            <!--Biologia é Natureza-->
+            <th colspan="4" scope="row">Média de Exatas</th>
+            <th><span id="medexat"></span></th>
+            <tr>
+                <th rowspan="2">Humanas</th>
+                <td>História</td>
+                <td><input type="number" name="his1" id="his1"></td>
+                <td><input type="number" name="his2" id="his2"></td>
+                <td><span id="medhis"></span></td>
+            </tr>
+            <tr>
+                <td>Filosofia</td>
+                <td><input type="number" name="fil1" id="fil1"></td>
+                <td><input type="number" name="fil2" id="fil2"></td>
+                <td><span id="medfil"></span></td>
+            </tr>
+            <tr>
+                <th colspan="4" scope="row">Média de Humanas</th>
+                <th><span></span></th>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
